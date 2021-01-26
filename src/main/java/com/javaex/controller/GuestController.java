@@ -90,9 +90,9 @@ public class GuestController {
 			return "redirect:/guest/list";
 		} else {
 			// 삭제 실패여부를 위해 count를 보낸다
-			model.addAttribute("result", count);
-			// parameter no의 값은 알아서 포워드 된다
-			return "deleteForm";
+			return "redirect:/guest/deleteForm?no="+guestVo.getNo()+"&result="+count;
+			
+			
 		}
 	}
 }

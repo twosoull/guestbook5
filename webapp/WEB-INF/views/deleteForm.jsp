@@ -14,7 +14,7 @@
 		<input type = "hidden" name = "no" value = "${param.no}">
 		<button type = "submit">확인</button>
 	</form>
-	<c:if test="${result eq '0'}">
+	<c:if test="${param.result eq '0'}">
 		<p>비밀번호가 틀렸습니다</p>
 	</c:if>
 
